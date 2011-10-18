@@ -19,7 +19,7 @@ function render_text_tinymce($text)
 	return '?>' . RenderMan::render($text, RENDER_INLINE);
 }
 
-$plugins->attachHook('get_page_source', 'get_page_src_tinymce($result["src"]);');
+$plugins->attachHook('get_page_source', 'get_page_src_tinymce($return["src"]);');
 
 function get_page_src_tinymce(&$text)
 {
